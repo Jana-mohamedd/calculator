@@ -1,0 +1,19 @@
+name: Calculation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print hello message
+        run: echo "Hello, Janna! Your GitHub Action is working 🎉"
+
+      - name: Show contents of repo
+        run: ls -la
